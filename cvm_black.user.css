@@ -5,6 +5,10 @@
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
+    :root {
+	color-scheme: dark;
+    }
+	
     .container > h1:nth-child(1), p {
         color: #6d6d6d;
     }
