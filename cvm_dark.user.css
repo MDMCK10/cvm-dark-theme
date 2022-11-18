@@ -1,14 +1,15 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    cvm-dark
-@version      1.0.8
+@version      1.0.9
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
+    
     :root {
-	color-scheme: dark;
+	    color-scheme: dark;
     }
-	
+    
     .container > h1:nth-child(1), p {
         color: #6d6d6d;
     }
@@ -57,7 +58,15 @@
     body {
         background-color: #212121 !important;
     }
+    
+    .my-8 {
+        background-image: none;
+    }
 
+    .cf-error-source::after {
+        display: none;
+    }
+    
     small, #vm-description {
         color: gray;
     }
