@@ -188,4 +188,12 @@
 	    border-bottom: none;
 	    box-shadow: none;
     }
+	
+    .my-8 {
+        background-image: none;
+    }
+
+    .cf-error-source::after {
+        display: none;
+    }
 }
