@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         CollabVM Dark
 @namespace    cvm-dark
-@version      1.0.9
+@version      1.1.0
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
@@ -14,16 +14,17 @@
         color: #6d6d6d;
     }
     
-    .ui.menu, .navbar, .navbar-default {
+    .nav-link, .navbar-brand {
+        color: #777 !important;
+    }
+    
+    nav > div, nav {
         background-color: #121212 !important;
         background-image: none !important;
+        padding-top: 0px !important;
     }
     
-    .navbar {
-        border: none;
-    }
-    
-    .item, label {
+    .item, label, .username-table > table > thead > tr > th {
         color: #a4a4a4 !important;
     }
 
@@ -31,7 +32,7 @@
         background-color: #2e2e2e !important;
     }
     
-    .list-group-item.disabled, .panel, .list-group-item {
+    #chatList {
         background-color: #2e2e2e !important;
         color: gray;
         border:none !important;
@@ -47,7 +48,7 @@
         background-color: #121212 !important;
         color: lightgray !important;
     }
-    #vm-list > div > div > div:hover, .thumbnail, div.caption {
+    #vmlist > div.row > div.col-sm-4 > div {
         background-color: #2e2e2e !important;
         border: none !important;
         color: gray !important;
@@ -55,7 +56,15 @@
     .tabulator-row.tabulator-selectable.tabulator-row-odd.tabulator-selected {
         background-color: #363636 !important;
     }
-    body {
+    
+    #userlist > tr > td, .username-table > table > thead > tr > th, .username-table {
+        background-color: #2e2e2e !important;
+        color: gray !important;
+        border:none !important;
+        box-shadow:none !important;
+    }
+    
+    body, .bg-dark, #vmview {
         background-color: #212121 !important;
     }
     
@@ -71,27 +80,29 @@
         color: gray;
     }
 
-    .ui.green.button, .ui.green.horizontal.label, button#vote-yes, .label-success {
+    #voteYesBtn, #voteYesLabel {
         background-color: darkgreen !important;
         background-image: none;
         border: none;
     }
 
-    .ui.red.button, .ui.red.horizontal.label, button#vote-no, .label-danger {
+    #voteNoBtn, #voteNoLabel {
         background-color: darkred !important;
         background-image: none;
         border: none;
     }
 
-    #online-users > .item.has-turn, .has-turn {
+   #userlist > .table-primary > td {
         background-color: #82b3c9 !important;
+        color: gray;
     }
 
-    #online-users > .item.waiting-turn, .waiting-turn {
+    #userlist > .table-warning > td {
         background-color: #cbc26d !important;
+        color: gray;
     }
     
-    .ui.button, #chat-user, #username-label, .ui.basic.labels .label, .ui.basic.label, #username-addon {
+    .btn, #username {
         background-color: #4d4d4d !important;
         border: none;
         color: gray;
@@ -119,14 +130,10 @@
         color: #a4a4a4;
         border: none !important;
     }
-
-    .message-pane-wrapper, #username-box {
-        background-color: #2b2b2b !important;
-        border: none !important;
-    }
     
-    .message-pane li:hover {
-        background-color: #4d4d4d;
+    #chatList > td:hover, #chatList > tr > td:hover {
+        background-color: #4d4d4d !important;
+        color: #6d6d6d !important;
     }
 
     .ui.cards > .card, .ui.cards > .card:hover {
@@ -134,16 +141,16 @@
         box-shadow: none !important;
     }
 
-    .ui.input > input, .ui.input > input:focus, .ui.input > input:active, div#field, #chat-input {
+    .ui.input > input, .ui.input > input:focus, .ui.input > input:active, .chat-table, #chatList > tr > td, #chat-input {
         background-color: #2b2b2b !important;
         border: none;
     }
     
-    #chat-input:focus, #username-box:focus {
+    #chat-input:focus, #username:focus {
         box-shadow: none;
     }
 
-    .message-pane > li {
+    #chatList > tr {
         border-bottom: 1px solid #363636;
         box-shadow: 0 1px 0 0 #333333;
     }
@@ -152,8 +159,10 @@
         color: gray;
     }
 
-    #chat-box > li > div {
-        color: #6d6d6d;
+    #chatList > tr, #username {
+        background-color: #4d4d4d !important;
+        border: none;
+        color: gray !important;
     }
 
     #vote-status > h3 > small {
@@ -174,8 +183,7 @@
         color: #a4a4a4;
     }
     
-    #chat-box > li > div > ul > li {
-	    border-bottom: none;
-	    box-shadow: none;
+    #chatList > tr > td > b.text-light {
+        color: black !important;
     }
 }
