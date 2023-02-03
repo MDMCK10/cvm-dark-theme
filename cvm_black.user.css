@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name         CollabVM Black
-@namespace    cvm-black
-@version      1.0.2
+@name         CollabVM Black Legacy
+@namespace    cvm-black-legacy
+@version      1.0.0
 @license      GPL-3.0
 ==/UserStyle== */
-@-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm|truth)/.*") {
+@-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm/classic|truth)/.*") {
     :root {
 	color-scheme: dark;
     }
