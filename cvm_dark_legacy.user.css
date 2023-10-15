@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         CollabVM Dark Legacy
 @namespace    cvm-dark-legacy
-@version      1.0.1
+@version      1.0.2
 @license      GPL-3.0
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm/classic|truth)/.*") {
@@ -179,12 +179,12 @@
 	    box-shadow: none;
     }
     
-    #chat-box > li > div > code {
+    #chat-box code {
         background-color: #1b1b1b;
         color: gray;
     }
     
-    #chat-box > li:hover > div > code {
+    #chat-box > li:hover code {
         background-color: #3b3b3b;
     }
 }
