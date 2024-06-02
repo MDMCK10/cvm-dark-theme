@@ -1,8 +1,8 @@
 /* ==UserStyle==
 @name         CollabVM Black Legacy
 @namespace    cvm-black-legacy
-@version      1.0.0
-@license      GPL-3.0
+@version      1.0.1
+@license      MIT
 ==/UserStyle== */
 @-moz-document regexp("^https?://([a-z0-9]+[.])*(computernewb\\.com|socket\\.computer|flyonthewall\\.buzz)/(collab-vm/classic|truth)/.*") {
     :root {
